@@ -5,9 +5,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    float velocidad = 3f;
-
-    Vector3 salto = new Vector3(0, 2, 0);
+    float velocidad = 3f; //Velocidad de mi bola.
+    Vector3 salto = new Vector3(0, 2, 0); //Salto de mi bola.
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +18,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         //Los valores de entrada de mi bola.
-        float movimientoHorizontal = Input.GetAxisRaw("Horizontal");
+        float movimientoHorizontal = Input.GetAxisRaw("Horizontal"); //Se mueve con 
         float movimientoVertical = Input.GetAxisRaw("Vertical");
         //Código que calcula movimiento.
         Vector3 direccion = new Vector3(movimientoHorizontal, 0, movimientoVertical);
